@@ -1,1 +1,1 @@
-# Real-Time-Connect-Four-Game
+# Real-Time-Connect-Four-Game with AI integration
