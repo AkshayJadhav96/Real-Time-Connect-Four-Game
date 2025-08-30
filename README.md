@@ -2,6 +2,10 @@
 
 This is a full-stack, web-based implementation of the classic Connect Four game. It features real-time gameplay using WebSockets, allowing users to play against a challenging AI or compete with friends in private rooms.
 
+## 🚀 Live Demo
+
+[![Play Live](https://img.shields.io/badge/Play-Live-brightgreen?style=for-the-badge)](https://connect-four-game-z1rn.onrender.com/)
+
 *![Alt text](game_image.png)*
 
 ## ✨ Features
@@ -118,7 +122,6 @@ Create a Room: Click this to generate a unique Room ID. Share this ID with your 
 Join a Room: Your friend can enter the Room ID you shared and click "Join Room" to start the game.
 
 ## 🔮 Future Improvements
-Deployment: Containerize the application with Docker for easy deployment.
 
 Game State Persistence: Use a database like Redis to maintain game states across server restarts.
 
