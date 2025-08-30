@@ -2,7 +2,7 @@ from fastapi import FastAPI, WebSocket, WebSocketDisconnect
 from fastapi.middleware.cors import CORSMiddleware
 from fastapi.responses import HTMLResponse
 import uuid
-from game_logic import Game
+from backend.src.connect_four_game.game_logic import Game
 import json
 import logging
 import asyncio # <--- 1. IMPORT ASYNCIO
