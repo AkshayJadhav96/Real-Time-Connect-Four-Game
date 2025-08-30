@@ -1,4 +1,5 @@
 from fastapi import FastAPI, WebSocket, WebSocketDisconnect
+from fastapi.middleware.cors import CORSMiddleware
 from fastapi.responses import HTMLResponse
 import uuid
 from game_logic import Game
@@ -7,9 +8,22 @@ import logging
 import asyncio # <--- 1. IMPORT ASYNCIO
 
 # Enable detailed logging
-logging.basicConfig(level=logging.DEBUG)
+# logging.basicConfig(level=logging.DEBUG)
 
 app = FastAPI()
+
+origins = [
+    "http://localhost:5173",
+    "https://your-frontend-will-go-here.onrender.com" 
+]
+
+app.add_middleware(
+    CORSMiddleware,
+    allow_origins=origins,
+    allow_credentials=True,
+    allow_methods=["*"],
+    allow_headers=["*"],
+)
 
 # In-memory storage: room_id -> {'game': Game, 'players': [websocket1, websocket2], 'mode': 'ai'/'multiplayer'}
 games = {}
