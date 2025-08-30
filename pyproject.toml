@@ -4,4 +4,9 @@ version = "0.1.0"
 description = "Add your description here"
 readme = "README.md"
 requires-python = ">=3.11"
-dependencies = []
+dependencies = [
+    "fastapi[all]>=0.116.1",
+    "numpy>=2.3.2",
+    "python-engineio>=4.12.2",
+    "python-socketio>=5.13.0",
+]
