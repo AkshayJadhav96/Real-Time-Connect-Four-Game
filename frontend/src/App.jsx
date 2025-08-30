@@ -3,7 +3,8 @@ import MainMenu from './components/MainMenu';
 import MultiplayerMenu from './components/MultiplayerMenu';
 import GameScreen from './components/GameScreen';
 
-const WEBSOCKET_URL = "ws://localhost:8000/ws";
+// const WEBSOCKET_URL = "ws://localhost:8000/ws";
+const WEBSOCKET_URL = "wss://connect-four-backend-dies.onrender.com/ws";
 
 function App() {
   const [screen, setScreen] = useState('menu'); // 'menu', 'multiplayer_menu', 'game'
