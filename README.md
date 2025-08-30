@@ -50,62 +50,6 @@ Make sure you have the following installed:
 * [Python 3.8+](https://www.python.org/downloads/) & `pip`
 * [Node.js](https://nodejs.org/en/) & `npm`
 
-# Installation & Setup
-
-## 1. Clone the Repository
-```bash
-git clone https://github.com/AkshayJadhav96/Real-Time-Connect-Four-Game.git
-cd Real-Time-Connect-Four-Game
-```
-
-## 2. Set up the backend
-
-Navigate to the backend directory
-```bash
-cd backend
-```
-
-Create and activate a virtual environment
-```bash
-uv init
-```
-
-Install the required Python packages
-```bash
-uv sync
-```
-
-## 3. Set up the Frontend
-Navigate to the frontend directory from the root
-```bash 
-cd frontend
-```
-
-Install the required npm packages
-```bash
-uv run npm install
-```
-
-## Running the Application
-#### You'll need to run both the backend and frontend servers simultaneously in separate terminal windows.
-
-Start the Backend Server
-In the /backend directory
-```bash 
-uv run uvicorn main:app --reload
-```
-
-Start the Frontend Development Server
-In the /frontend directory
-```bash
-npm run dev
-```
-
-The frontend will be available at http://localhost:5173 (or another port if 5173 is in use).
-
-Open Your Browser
-Navigate to http://localhost:5173 to play the game!
-
 ## 🎮 How to Play
 Open the application in your browser.
 
