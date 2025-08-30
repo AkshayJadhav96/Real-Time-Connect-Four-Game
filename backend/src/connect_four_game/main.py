@@ -112,7 +112,7 @@ async def websocket_endpoint(websocket: WebSocket):
                 
                 if game_data['mode'] == 'ai' and game.current_turn == 2:
                     # --- 2. ADD THE DELAY HERE ---
-                    # await asyncio.sleep(0.5) # Wait for 2 seconds before the AI moves
+                    await asyncio.sleep(0.1) # Wait for 2 seconds before the AI moves
 
                     game.make_ai_move()
                     await broadcast(room_id, {'type': 'update_board', 'data': game.to_dict()})
