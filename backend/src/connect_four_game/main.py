@@ -28,6 +28,7 @@ app.add_middleware(
 # In-memory storage: room_id -> {'game': Game, 'players': [websocket1, websocket2], 'mode': 'ai'/'multiplayer'}
 games = {}
 
+@app.head("/")
 @app.get("/")
 async def get():
     return HTMLResponse("<h1>Connect Four Backend</h1>")
